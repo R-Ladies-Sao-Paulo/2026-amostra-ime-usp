@@ -169,21 +169,200 @@ Primeira edição em novembro/2022.
 
 # Projetos de tradução com a comunidade R {background-color="#562457"}
 
-## Pacote dados
+## Por que traduzir?
 
-<https://cran.r-project.org/web/packages/dados/index.html>
+:::: {.columns}
+::: {.column width="60%"}
+-   Muitos recursos para aprender R estão disponíveis apenas em inglês.
+
+-   Traduzir amplia o acesso a conteúdos técnicos e democratiza o conhecimento.
+
+-   Exemplo: o livro *R for Data Science* é gratuito online em inglês, mas a 1ª edição em português estava disponível apenas impressa (R\$ 120 a R\$ 150).
+:::
+
+::: {.column width="40%"}
+![](images/ilustracao-brasil.png)
+:::
+::::
+
+::: footer
+Ilustração: Ariana Cabral
+:::
+
+## Pacote dados (2020)
+
+-   Tradução das bases de dados usadas no livro *R for Data Science*.
+
+-   Inspirado no pacote `{datos}`, em espanhol.
+
+-   Coordenação: Riva Quiroga e Beatriz Milz (R-Ladies SP).
+
+-   11 pessoas voluntárias de 3 países (Brasil, Chile e Colômbia).
+
+-   Disponível no [CRAN](https://cran.r-project.org/web/packages/dados/index.html).
+
+![](images/equipe-dados.png){.nostretch fig-align="center" width="50%"}
 
 ## Livro R para Ciência de Dados
 
-<https://pt.r4ds.hadley.nz/>
+:::: {.columns}
+::: {.column width="70%"}
+-   2021: no **Clube do livro da R-Ladies SP**, vimos que a 2ª edição estava sendo escrita e [pedimos permissão](https://github.com/hadley/r4ds/issues/955) para traduzir.
+
+-   Set/2023 a nov/2024: tradução da 2ª edição.
+
+    -   Coordenação: Beatriz Milz. Orientação: Riva Quiroga.
+    -   22 pessoas participaram: cada capítulo foi traduzido por uma pessoa e revisado por duas.
+
+-   Disponível gratuitamente em: <https://pt.r4ds.hadley.nz/>
+:::
+
+::: {.column width="30%"}
+![](images/ilustracao-r4ds.png)
+:::
+::::
+
+::: footer
+Ilustração: Ariana Cabral
+:::
+
+## Livro R para Ciência de Dados: equipe
+
+22 pessoas participaram da tradução e revisão!
+
+![](images/equipe-r4ds-1.png){fig-align="center" width="55%"}
+
+![](images/equipe-r4ds-2.png){fig-align="center" width="55%"}
+
+## Livro R para Ciência de Dados: como fizemos
+
+:::: {.columns}
+::: {.column width="60%"}
+-   Comunidades como a R-Ladies ajudaram a encontrar pessoas voluntárias.
+
+-   GitHub: issues, pull requests e projects para organizar o trabalho.
+
+-   [Guia de tradução](https://cienciadedatos.github.io/guia-traducao-ptbr/): facilitou a participação de pessoas sem experiência prévia com GitHub.
+
+-   Divulgação: [Clube do livro R-Ladies SP](https://youtube.com/playlist?list=PLufjVrrUAoSdAk_I8l_MJRCwS8P_R-isY), organizado por Luana Antunes e Beatriz Milz.
+:::
+
+::: {.column width="40%"}
+![](images/clube-do-livro.png)
+:::
+::::
 
 ## DevGuide da rOpenSci
 
-<https://devguide.ropensci.org/pt/index.pt.html>
+:::: {.columns}
+::: {.column width="65%"}
+-   Guia sobre desenvolvimento, manutenção e avaliação por pares de pacotes em R.
+
+-   Coordenação: Yanina Bellini Saibene e Pedro Faria.
+
+-   2024: [Community Call](https://ropensci.org/commcalls/translation-portuguese/) "A comunidade R fala português" e Traslatón na LatinR.
+
+-   Disponível em: [devguide.ropensci.org/pt](https://devguide.ropensci.org/pt/index.pt.html)
+:::
+
+::: {.column width="35%"}
+![](images/devguide-ropensci.png)
+:::
+::::
 
 ## Tradução das mensagens do R
 
-<https://contributor.r-project.org/rdevguide/chapters/message_translations.html>
+:::: {.columns}
+::: {.column width="55%"}
+-   Tradução das mensagens (erros, avisos, etc.) do R e dos pacotes do "R base".
+
+-   Coordenação em português: Caio Lente e Renata Hirota.
+
+-   2022: R Traslatón na LatinR, em parceria com o R Contributors.
+
+-   **Projeto aberto para contribuições!**
+:::
+
+::: {.column width="45%"}
+![](images/status-traducao-r.png)
+:::
+::::
+
+::: footer
+Fonte do gráfico: [Blog do R](https://blog.r-project.org/2022/07/25/r-can-use-your-help-translating-r-messages/)
+:::
+
+## Mensagens do R: em inglês
+
+```{r}
+#| include: false
+Sys.setenv(LANGUAGE = "en")
+```
+
+```{r}
+#| echo: true
+#| error: true
+mean(notas)
+
+library(tidyvese)
+```
+
+## Mensagens do R: em português
+
+Mudando o idioma das mensagens:
+
+```{r}
+#| echo: true
+Sys.setenv(LANGUAGE = "pt_BR")
+```
+
+O mesmo código, agora com as mensagens traduzidas:
+
+```{r}
+#| echo: true
+#| error: true
+mean(notas)
+
+library(tidyvese)
+```
+
+## Como contribuir?
+
+1.  Entre no [Slack do R Contributors](https://contributor.r-project.org/slack) e se apresente no canal `#core-translations`.
+
+2.  Crie uma conta no [Weblate](https://translate.rx.studio/), a plataforma onde as traduções são feitas.
+
+3.  Leia as [orientações para tradução em português](https://contributor.r-project.org/translations/Conventions_for_Languages/Brazilian%E2%80%90Portugese-specific-translations.html).
+
+4.  Escolha um [componente em português](https://translate.rx.studio/languages/pt_BR/r-project/) que não esteja 100% traduzido.
+
+    -   Dica: comece por pacotes como `parallel` ou `methods`. Pacotes como `stats` têm muitos termos técnicos.
+
+5.  Clique em *Unfinished strings* e comece a traduzir!
+
+## Weblate
+
+![](images/weblate.png){fig-align="center"}
+
+::: footer
+Mais informações: [R Contributors - Translations](https://contributor.r-project.org/translations/)
+:::
+
+## E a R-Ladies nisso tudo?
+
+-   O pedido para traduzir a 2ª edição do R4DS surgiu no Clube do livro da R-Ladies SP.
+
+-   Comunidades como a R-Ladies, a LatinR e a Curso-R foram essenciais para encontrar pessoas voluntárias.
+
+-   O Clube do livro da R-Ladies SP ajuda a divulgar o livro traduzido.
+
+::: r-hstack
+![](images/logo.jpg){height="150"}
+
+![](images/logo-latinr.png){height="150"}
+
+![](images/logo-curso-r.png){height="80"}
+:::
 
 <!-- inicio font awesome -->
 

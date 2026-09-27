@@ -32,6 +32,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-c6be4f27cab8b631a266187b8c92e4f8.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -398,21 +464,179 @@
 <h1>Projetos de tradução com a comunidade R</h1>
 
 </section>
-<section id="pacote-dados" class="slide level2">
-<h2>Pacote dados</h2>
-<p><a href="https://cran.r-project.org/web/packages/dados/index.html" class="uri">https://cran.r-project.org/web/packages/dados/index.html</a></p>
+<section id="por-que-traduzir" class="slide level2">
+<h2>Por que traduzir?</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><p>Muitos recursos para aprender R estão disponíveis apenas em inglês.</p></li>
+<li><p>Traduzir amplia o acesso a conteúdos técnicos e democratiza o conhecimento.</p></li>
+<li><p>Exemplo: o livro <em>R for Data Science</em> é gratuito online em inglês, mas a 1ª edição em português estava disponível apenas impressa (R$ 120 a R$ 150).</p></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/ilustracao-brasil.png"></p>
+</div></div>
+<div class="footer">
+<p>Ilustração: Ariana Cabral</p>
+</div>
+</section>
+<section id="pacote-dados-2020" class="slide level2">
+<h2>Pacote dados (2020)</h2>
+<ul>
+<li><p>Tradução das bases de dados usadas no livro <em>R for Data Science</em>.</p></li>
+<li><p>Inspirado no pacote <code>{datos}</code>, em espanhol.</p></li>
+<li><p>Coordenação: Riva Quiroga e Beatriz Milz (R-Ladies SP).</p></li>
+<li><p>11 pessoas voluntárias de 3 países (Brasil, Chile e Colômbia).</p></li>
+<li><p>Disponível no <a href="https://cran.r-project.org/web/packages/dados/index.html">CRAN</a>.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/equipe-dados.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></p>
+</figure>
+</div>
 </section>
 <section id="livro-r-para-ciência-de-dados" class="slide level2">
 <h2>Livro R para Ciência de Dados</h2>
-<p><a href="https://pt.r4ds.hadley.nz/" class="uri">https://pt.r4ds.hadley.nz/</a></p>
+<div class="columns">
+<div class="column" style="width:70%;">
+<ul>
+<li><p>2021: no <strong>Clube do livro da R-Ladies SP</strong>, vimos que a 2ª edição estava sendo escrita e <a href="https://github.com/hadley/r4ds/issues/955">pedimos permissão</a> para traduzir.</p></li>
+<li><p>Set/2023 a nov/2024: tradução da 2ª edição.</p>
+<ul>
+<li>Coordenação: Beatriz Milz. Orientação: Riva Quiroga.</li>
+<li>22 pessoas participaram: cada capítulo foi traduzido por uma pessoa e revisado por duas.</li>
+</ul></li>
+<li><p>Disponível gratuitamente em: <a href="https://pt.r4ds.hadley.nz/" class="uri">https://pt.r4ds.hadley.nz/</a></p></li>
+</ul>
+</div><div class="column" style="width:30%;">
+<p><img data-src="images/ilustracao-r4ds.png"></p>
+</div></div>
+<div class="footer">
+<p>Ilustração: Ariana Cabral</p>
+</div>
+</section>
+<section id="livro-r-para-ciência-de-dados-equipe" class="slide level2">
+<h2>Livro R para Ciência de Dados: equipe</h2>
+<p>22 pessoas participaram da tradução e revisão!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/equipe-r4ds-1.png" class="quarto-figure quarto-figure-center" style="width:55.0%"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/equipe-r4ds-2.png" class="quarto-figure quarto-figure-center" style="width:55.0%"></p>
+</figure>
+</div>
+</section>
+<section id="livro-r-para-ciência-de-dados-como-fizemos" class="slide level2">
+<h2>Livro R para Ciência de Dados: como fizemos</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><p>Comunidades como a R-Ladies ajudaram a encontrar pessoas voluntárias.</p></li>
+<li><p>GitHub: issues, pull requests e projects para organizar o trabalho.</p></li>
+<li><p><a href="https://cienciadedatos.github.io/guia-traducao-ptbr/">Guia de tradução</a>: facilitou a participação de pessoas sem experiência prévia com GitHub.</p></li>
+<li><p>Divulgação: <a href="https://youtube.com/playlist?list=PLufjVrrUAoSdAk_I8l_MJRCwS8P_R-isY">Clube do livro R-Ladies SP</a>, organizado por Luana Antunes e Beatriz Milz.</p></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/clube-do-livro.png"></p>
+</div></div>
 </section>
 <section id="devguide-da-ropensci" class="slide level2">
 <h2>DevGuide da rOpenSci</h2>
-<p><a href="https://devguide.ropensci.org/pt/index.pt.html" class="uri">https://devguide.ropensci.org/pt/index.pt.html</a></p>
+<div class="columns">
+<div class="column" style="width:65%;">
+<ul>
+<li><p>Guia sobre desenvolvimento, manutenção e avaliação por pares de pacotes em R.</p></li>
+<li><p>Coordenação: Yanina Bellini Saibene e Pedro Faria.</p></li>
+<li><p>2024: <a href="https://ropensci.org/commcalls/translation-portuguese/">Community Call</a> “A comunidade R fala português” e Traslatón na LatinR.</p></li>
+<li><p>Disponível em: <a href="https://devguide.ropensci.org/pt/index.pt.html">devguide.ropensci.org/pt</a></p></li>
+</ul>
+</div><div class="column" style="width:35%;">
+<p><img data-src="images/devguide-ropensci.png"></p>
+</div></div>
 </section>
 <section id="tradução-das-mensagens-do-r" class="slide level2">
 <h2>Tradução das mensagens do R</h2>
-<p><a href="https://contributor.r-project.org/rdevguide/chapters/message_translations.html" class="uri">https://contributor.r-project.org/rdevguide/chapters/message_translations.html</a></p>
+<div class="columns">
+<div class="column" style="width:55%;">
+<ul>
+<li><p>Tradução das mensagens (erros, avisos, etc.) do R e dos pacotes do “R base”.</p></li>
+<li><p>Coordenação em português: Caio Lente e Renata Hirota.</p></li>
+<li><p>2022: R Traslatón na LatinR, em parceria com o R Contributors.</p></li>
+<li><p><strong>Projeto aberto para contribuições!</strong></p></li>
+</ul>
+</div><div class="column" style="width:45%;">
+<p><img data-src="images/status-traducao-r.png"></p>
+</div></div>
+<div class="footer">
+<p>Fonte do gráfico: <a href="https://blog.r-project.org/2022/07/25/r-can-use-your-help-translating-r-messages/">Blog do R</a></p>
+</div>
+</section>
+<section id="mensagens-do-r-em-inglês" class="slide level2">
+<h2>Mensagens do R: em inglês</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="fu">mean</span>(notas)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error: object 'notas' not found</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="fu">library</span>(tidyvese)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in library(tidyvese): there is no package called 'tidyvese'</code></pre>
+</div>
+</div>
+</section>
+<section id="mensagens-do-r-em-português" class="slide level2">
+<h2>Mensagens do R: em português</h2>
+<p>Mudando o idioma das mensagens:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a><span class="fu">Sys.setenv</span>(<span class="at">LANGUAGE =</span> <span class="st">"pt_BR"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>O mesmo código, agora com as mensagens traduzidas:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href=""></a><span class="fu">mean</span>(notas)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error: objeto 'notas' não encontrado</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href=""></a><span class="fu">library</span>(tidyvese)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in library(tidyvese): não há nenhum pacote chamado 'tidyvese'</code></pre>
+</div>
+</div>
+</section>
+<section id="como-contribuir" class="slide level2">
+<h2>Como contribuir?</h2>
+<ol type="1">
+<li><p>Entre no <a href="https://contributor.r-project.org/slack">Slack do R Contributors</a> e se apresente no canal <code>#core-translations</code>.</p></li>
+<li><p>Crie uma conta no <a href="https://translate.rx.studio/">Weblate</a>, a plataforma onde as traduções são feitas.</p></li>
+<li><p>Leia as <a href="https://contributor.r-project.org/translations/Conventions_for_Languages/Brazilian%E2%80%90Portugese-specific-translations.html">orientações para tradução em português</a>.</p></li>
+<li><p>Escolha um <a href="https://translate.rx.studio/languages/pt_BR/r-project/">componente em português</a> que não esteja 100% traduzido.</p>
+<ul>
+<li>Dica: comece por pacotes como <code>parallel</code> ou <code>methods</code>. Pacotes como <code>stats</code> têm muitos termos técnicos.</li>
+</ul></li>
+<li><p>Clique em <em>Unfinished strings</em> e comece a traduzir!</p></li>
+</ol>
+</section>
+<section id="weblate" class="slide level2">
+<h2>Weblate</h2>
+
+<img data-src="images/weblate.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Mais informações: <a href="https://contributor.r-project.org/translations/">R Contributors - Translations</a></p>
+</div>
+</section>
+<section id="e-a-r-ladies-nisso-tudo" class="slide level2">
+<h2>E a R-Ladies nisso tudo?</h2>
+<ul>
+<li><p>O pedido para traduzir a 2ª edição do R4DS surgiu no Clube do livro da R-Ladies SP.</p></li>
+<li><p>Comunidades como a R-Ladies, a LatinR e a Curso-R foram essenciais para encontrar pessoas voluntárias.</p></li>
+<li><p>O Clube do livro da R-Ladies SP ajuda a divulgar o livro traduzido.</p></li>
+</ul>
+<div class="r-hstack">
+<p><img data-src="images/logo.jpg" height="150"></p>
+<p><img data-src="images/logo-latinr.png" height="150"></p>
+<p><img data-src="images/logo-curso-r.png" height="80"></p>
+</div>
 <!-- inicio font awesome -->
 <script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
 <!-- final font awesome -->
