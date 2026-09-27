@@ -6,9 +6,18 @@ date: "2026-10-01"
 lang: pt-BR
 format: 
   rladies-revealjs:
+    slide-number: c/t
     footer: "Slides feitos com [Quarto](https://quarto.org/docs/presentations/revealjs/index.html) e [Quarto R-Ladies Theme](https://github.com/beatrizmilz/quarto-rladies-theme#quarto-r-ladies-theme)."
 incremental: false
 ---
+
+## Cronograma
+
+- R-Ladies São Paulo
+
+- Projetos de tradução com a comunidade R
+
+# R-Ladies SP {background-color="#562457"}
 
 ```{r include=FALSE}
 # Base de dados
@@ -157,6 +166,24 @@ Primeira edição em novembro/2022.
     -   [<i class="fab fa-meetup"></i> Meetup](https://www.meetup.com/rladies-sao-paulo/)
     -   [<i class="fab fa-github"></i> GitHub](https://github.com/R-Ladies-Sao-Paulo)
     -   [<i class="fab fa-youtube"></i> Youtube](https://www.youtube.com/c/RLadiesSãoPaulo)
+
+# Projetos de tradução com a comunidade R {background-color="#562457"}
+
+## Pacote dados
+
+<https://cran.r-project.org/web/packages/dados/index.html>
+
+## Livro R para Ciência de Dados
+
+<https://pt.r4ds.hadley.nz/>
+
+## DevGuide da rOpenSci
+
+<https://devguide.ropensci.org/pt/index.pt.html>
+
+## Tradução das mensagens do R
+
+<https://contributor.r-project.org/rdevguide/chapters/message_translations.html>
 
 <!-- inicio font awesome -->
 
