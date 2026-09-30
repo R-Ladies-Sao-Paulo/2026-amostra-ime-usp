@@ -111,11 +111,11 @@ rladies <- jsonlite::fromJSON(paste0(url_base, "chapters.json")) |>
 
 ```
 
-## O que é a R-Ladies?
+## O que é a RLadies+?
 
-R-Ladies é uma organização mundial cuja missão é promover a diversidade de gênero na comunidade da linguagem R.
+RLadies+ é uma organização mundial cuja missão é promover a diversidade de gênero na comunidade da linguagem R.
 
-R-Ladies São Paulo integra, orgulhosamente, a organização R-Ladies Global, em São Paulo.
+R-Ladies São Paulo integra, orgulhosamente, a organização RLadies+ Global, em São Paulo.
 
 ## Como?
 
@@ -129,21 +129,21 @@ Fonte: [About us - R-Ladies](https://rladies.org/about-us/), [Meetup - São Paul
 
 ## Para quem?
 
-Nosso principal público-alvo são as pessoas que se identificam com gêneros sub-representados na comunidade R, portanto: mulheres cis, mulheres trans, homens trans, pessoas não-binárias e queer.
+Nosso principal público-alvo são as pessoas que se identificam com gêneros sub-representados na comunidade R, portanto: mulheres cis e trans, homens trans, pessoas não-binárias, genderqueer e agênero.
 
 ## Missão
 
-Como uma iniciativa de diversidade, a missão das R-Ladies é alcançar uma representação proporcional de pessoas de gêneros atualmente sub-representados na comunidade R, incentivando, inspirando e capacitando-as.
+Como uma iniciativa de diversidade, a missão da RLadies+ é alcançar uma representação proporcional de pessoas de gêneros atualmente sub-representados na comunidade R, incentivando, inspirando e capacitando-as.
 
 ## Código de conduta
 
-A R-Ladies dedica-se a proporcionar uma experiência livre de assédio para todas as pessoas partcicipantes, desta forma, não é tolerada nenhuma forma de assédio. [Código de conduta - R-Ladies](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese)
+A RLadies+ dedica-se a proporcionar uma experiência livre de assédio para todas as pessoas participantes, desta forma, não é tolerada nenhuma forma de assédio. [Código de conduta - R-Ladies](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese)
 
 ::: footer
 Fonte: [About us - R-Ladies](https://rladies.org/about-us/), [Meetup - São Paulo](https://www.meetup.com/rladies-sao-paulo/)
 :::
 
-## R-Ladies - Capítulos no mundo
+## RLadies+: capítulos no mundo
 
 ```{r echo=FALSE}
 rladies |>
@@ -162,7 +162,7 @@ rladies |>
 Atualizado em: `r format(data_atualizacao, '%d/%m/%Y')`. Ativo: evento no Meetup nos últimos 12 meses, incluindo agendados e cancelados. Fonte: [RLadies+ Meetup Archive](https://github.com/rladies/meetup_archive)
 :::
 
-## R-Ladies no Brasil: capítulos ativos
+## RLadies+ no Brasil: capítulos ativos
 
 ```{r echo=FALSE}
 rladies_br <- rladies |>
@@ -191,7 +191,7 @@ rladies_br |>
 Atualizado em: `r format(data_atualizacao, '%d/%m/%Y')`. Ativo: evento no Meetup nos últimos 12 meses, incluindo agendados e cancelados. Fonte: [RLadies+ Meetup Archive](https://github.com/rladies/meetup_archive)
 :::
 
-## R-Ladies no Brasil: outros capítulos {.smaller}
+## RLadies+ no Brasil: outros capítulos {.smaller}
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -251,21 +251,6 @@ Primeira edição em novembro/2022.
 
 [![](images/blog.png){fig-align="center"}](https://rladies-sp.org/)
 
-## Saiba mais sobre a R-Ladies
-
--   R-Ladies Global: [Website](https://rladies.org/), [<i class="fab fa-twitter"></i> Twitter](https://twitter.com/rladiesglobal)
-
--   R-Ladies São Paulo:
-
-    -   Blog: <https://rladies-sp.org/>
-    -   [<i class="fab fa-linkedin"></i> Linkedin](https://www.linkedin.com/company/r-ladies-sao-paulo/)
-    -   [<i class="fab fa-twitter"></i> Twitter](https://twitter.com/RLadiesSaoPaulo)
-    -   [<i class="fab fa-instagram"></i> Instagram](https://instagram.com/RLadiesSaoPaulo)
-    -   [<i class="fab fa-facebook"></i> Facebook](https://facebook.com/RLadiesSaoPaulo)
-    -   [<i class="fab fa-meetup"></i> Meetup](https://www.meetup.com/rladies-sao-paulo/)
-    -   [<i class="fab fa-github"></i> GitHub](https://github.com/R-Ladies-Sao-Paulo)
-    -   [<i class="fab fa-youtube"></i> Youtube](https://www.youtube.com/c/RLadiesSãoPaulo)
-
 # Projetos de tradução com a comunidade R {background-color="#562457"}
 
 ## Por que traduzir?
@@ -296,10 +281,10 @@ Ilustração: Ariana Cabral
 
 | Projeto                      | Comunidades envolvidas                                   |
 |------------------------------|----------------------------------------------------------|
-| Pacote dados                 | LatinR, R-Ladies                                         |
+| Pacote dados                 | LatinR, RLadies+                                         |
 | Livro R para Ciência de Dados | R-Ladies São Paulo, LatinR, Curso-R                     |
 | DevGuide da rOpenSci         | rOpenSci, LatinR                                         |
-| Tradução das mensagens do R  | R Contribution Working Group (inclui a R-Ladies), LatinR |
+| Tradução das mensagens do R  | R Contribution Working Group (inclui a RLadies+), LatinR |
 
 # Pacote dados {background-color="#562457"}
 
@@ -417,7 +402,7 @@ Fontes: [hadley.nz](https://hadley.nz/), [mine-cr.com](https://mine-cr.com/), [H
 
 :::: {.columns}
 ::: {.column width="60%"}
--   Comunidades como a R-Ladies ajudaram a encontrar pessoas voluntárias.
+-   Comunidades como a RLadies+ ajudaram a encontrar pessoas voluntárias.
 
 -   GitHub: issues, pull requests e projects para organizar o trabalho.
 
@@ -507,8 +492,6 @@ Fonte: [Blog da rOpenSci](https://ropensci.org/pt/blog/2025/11/25/tradu%C3%A7%C3
 ::: {.column width="55%"}
 -   Tradução das mensagens (erros, avisos, etc.) do R e dos pacotes do "R base".
 
--   Coordenação em português: Caio Lente e Renata Hirota.
-
 -   2022: R Traslatón na LatinR, em parceria com o R Contributors.
 
 -   **Projeto aberto para contribuições!**
@@ -525,7 +508,7 @@ Fonte do gráfico: [Blog do R](https://blog.r-project.org/2022/07/25/r-can-use-y
 
 ## Quem está por trás?
 
--   [R Contribution Working Group](https://contributor.r-project.org/working-group.html): colaboração entre o R Core, comunidades como **R-Ladies**, Forwards e MiR, e a comunidade R em geral.
+-   [R Contribution Working Group](https://contributor.r-project.org/working-group.html): colaboração entre o R Core, comunidades como **RLadies+**, Forwards e MiR, e a comunidade R em geral.
 
     -   Objetivo: incentivar novas pessoas a contribuir com o R, com foco em diversidade e inclusão.
 
@@ -567,7 +550,7 @@ mean(notas)
 library(tidyvese)
 ```
 
-## Como contribuir?
+## Como traduzir as mensagens do R?
 
 1.  Entre no [Zulip do R Project](https://contributor.r-project.org/zulip.html) e procure os canais da seção *Translation*.
 
@@ -614,15 +597,17 @@ Fonte: [RSMF: Enabling the Next Generation of Contributors to R - Blog do R](htt
 
 -->
 
-## E a R-Ladies nisso tudo?
+# Faça parte! {background-color="#562457"}
+
+## Contribuições da RLadies+
 
 -   O pedido para traduzir a 2ª edição do R4DS surgiu no Clube do livro da R-Ladies SP.
 
--   Comunidades como a R-Ladies, a LatinR e a Curso-R foram essenciais para encontrar pessoas voluntárias.
+-   Comunidades como a RLadies+, a LatinR e a Curso-R foram essenciais para encontrar pessoas voluntárias.
 
 -   O Clube do livro da R-Ladies SP ajuda a divulgar o livro traduzido.
 
--   A R-Ladies faz parte do R Contribution Working Group, que incentiva novas pessoas a contribuir com o R (inclusive com traduções).
+-   A RLadies+ faz parte do R Contribution Working Group, que incentiva novas pessoas a contribuir com o R (inclusive com traduções).
 
 ::: r-hstack
 ![](images/logo.jpg){height="110"}
@@ -631,6 +616,45 @@ Fonte: [RSMF: Enabling the Next Generation of Contributors to R - Blog do R](htt
 
 ![](images/logo-curso-r.png){height="60"}
 :::
+
+## Por que participar?
+
+-   Aprender na prática como funciona um pacote de R (e o próprio R por dentro).
+
+-   Praticar Git e GitHub em um projeto real: issues, pull requests e revisão.
+
+-   Construir portfólio e currículo.
+
+-   Conhecer pessoas da comunidade R no Brasil e no mundo.
+
+-   Abrir portas para oportunidades, como bolsas e participação em eventos.
+
+## Como contribuir?
+
+-   **Traduzir e revisar**: por exemplo, as mensagens do R no [Weblate](https://translate.rx.studio/).
+
+-   **Avisar sobre problemas** encontrados (erros de tradução, links quebrados etc.), abrindo issues no GitHub: [livro](https://github.com/cienciadedatos/pt-r4ds/issues), [pacote dados](https://github.com/cienciadedatos/dados/issues), [DevGuide](https://github.com/ropensci/dev_guide/issues).
+
+-   **Usar e divulgar os materiais**: estude pelo livro, use o pacote dados em aulas e compartilhe com colegas!
+
+-   **Organizar eventos**: por exemplo, maratonas de tradução (como os Traslatóns da LatinR) ou clubes do livro (como o da R-Ladies SP).
+
+## Saiba mais
+
+-   RLadies+ Global: [Website](https://rladies.org/)
+
+-   R-Ladies São Paulo:
+
+    -   Blog: <https://rladies-sp.org/>
+    -   [<i class="fab fa-linkedin"></i> Linkedin](https://www.linkedin.com/company/r-ladies-sao-paulo/)
+    -   [<i class="fab fa-instagram"></i> Instagram](https://instagram.com/RLadiesSaoPaulo)
+    -   [<i class="fab fa-meetup"></i> Meetup](https://www.meetup.com/rladies-sao-paulo/)
+    -   [<i class="fab fa-github"></i> GitHub](https://github.com/R-Ladies-Sao-Paulo)
+    -   [<i class="fab fa-youtube"></i> Youtube](https://www.youtube.com/c/RLadiesSãoPaulo)
+
+# Obrigada! {background-color="#562457"}
+
+Slides: [r-ladies-sao-paulo.github.io/2026-amostra-ime-usp](https://r-ladies-sao-paulo.github.io/2026-amostra-ime-usp/)
 
 <!-- inicio font awesome -->
 
