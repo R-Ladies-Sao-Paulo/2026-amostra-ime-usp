@@ -63,19 +63,51 @@ incremental: false
 # R-Ladies SP {background-color="#562457"}
 
 ```{r include=FALSE}
-# Base de dados
-url <- "https://benubah.github.io/r-community-explorer/data/rladies.csv"
+# Base de dados: https://github.com/rladies/meetup_archive
+url_base <- "https://raw.githubusercontent.com/rladies/meetup_archive/main/data/"
 
-fs::dir_create("data")
+data_atualizacao <- as.Date(jsonlite::fromJSON(paste0(url_base, "updated.json"))$date)
 
-download.file(url, "data/rladies.csv", method = "curl")
+# status: "past" (realizado), "active" (agendado) ou "cancelled"
+eventos <- jsonlite::fromJSON(paste0(url_base, "events.json")) |>
+  tibble::as_tibble() |>
+  dplyr::transmute(
+    urlname = group_urlname,
+    titulo = title,
+    link,
+    status,
+    data = as.Date(datetime)
+  )
 
-rladies <- readr::read_csv("data/rladies.csv") |> tibble::as_tibble()
+eventos_realizados <- eventos |>
+  dplyr::filter(status == "past") |>
+  dplyr::summarise(
+    primeiro_evento = min(data),
+    ultimo_evento = max(data),
+    .by = urlname
+  )
 
+eventos_todos <- eventos |>
+  dplyr::summarise(ultimo_evento_qualquer_status = max(data), .by = urlname)
 
-meetup_url <- rladies |>
-  dplyr::filter(city == "São Paulo") |> 
-  dplyr::pull(fullurl)
+rladies <- jsonlite::fromJSON(paste0(url_base, "chapters.json")) |>
+  tibble::as_tibble() |>
+  dplyr::left_join(eventos_realizados, by = "urlname") |>
+  dplyr::left_join(eventos_todos, by = "urlname") |>
+  dplyr::mutate(
+    meetup_url = paste0("https://www.meetup.com/", urlname, "/"),
+    # Ativo: evento nos últimos 12 meses, mesmo que agendado ou cancelado
+    ativo = !is.na(ultimo_evento_qualquer_status) &
+      ultimo_evento_qualquer_status >= data_atualizacao - 365,
+    regiao = dplyr::case_when(
+      country_acronym %in% c("us", "ca") ~ "EUA e Canadá",
+      grepl("^America|Galapagos", timezone) ~ "América Latina",
+      grepl("^Europe", timezone) ~ "Europa",
+      grepl("^Africa", timezone) ~ "África",
+      grepl("^Asia", timezone) ~ "Ásia",
+      .default = "Oceania"
+    )
+  )
 
 ```
 
@@ -114,63 +146,87 @@ Fonte: [About us - R-Ladies](https://rladies.org/about-us/), [Meetup - São Paul
 ## R-Ladies - Capítulos no mundo
 
 ```{r echo=FALSE}
-rladies |>  
-  dplyr::group_by(region) |> 
-  dplyr::summarise(n_capitulos = dplyr::n(), 
-            total_participantes = sum(members, na.rm = TRUE)) |> 
+rladies |>
+  dplyr::summarise(
+    n_capitulos = dplyr::n(),
+    n_ativos = sum(ativo),
+    total_participantes = sum(members, na.rm = TRUE),
+    .by = regiao
+  ) |>
   dplyr::arrange(dplyr::desc(n_capitulos)) |>
-  knitr::kable(col.names =  c("Região", "Número de Capítulos", "Total de participantes"))
+  knitr::kable(col.names = c("Região", "Capítulos", "Capítulos ativos", "Participantes"))
   
 ```
 
 ::: footer
-Atualizado em: `r  format(Sys.time(), '%m/%Y')`. Fonte: [R Community Explorer](https://benubah.github.io/r-community-explorer/rladies.html)
+Atualizado em: `r format(data_atualizacao, '%d/%m/%Y')`. Ativo: evento no Meetup nos últimos 12 meses, incluindo agendados e cancelados. Fonte: [RLadies+ Meetup Archive](https://github.com/rladies/meetup_archive)
 :::
 
-## R-Ladies no Brasil
+## R-Ladies no Brasil: capítulos ativos
 
 ```{r echo=FALSE}
 rladies_br <- rladies |>
-  dplyr::arrange(desc(members)) |>
-  dplyr::filter(country == "Brazil") |>
-  dplyr::mutate(name = paste0("<a href='", fullurl, "' target='_blank'>", name, "</a>")) |>
-  dplyr::select(name, members)
+  dplyr::filter(country_acronym == "br") |>
+  dplyr::arrange(dplyr::desc(ultimo_evento)) |>
+  dplyr::mutate(
+    name = sub("^R-Ladies\\+? ", "", name),
+    name = paste0("<a href='", meetup_url, "' target='_blank'>", name, "</a>"),
+    ultimo_evento = dplyr::coalesce(format(ultimo_evento, "%m/%Y"), "Nenhum evento")
+  )
 
+tabela_br <- function(dados) {
+  dados |>
+    dplyr::select(name, members, ultimo_evento) |>
+    knitr::kable(col.names = c("Capítulo", "Participantes", "Último evento realizado"))
+}
 ```
 
 ```{r}
 rladies_br |>
-  dplyr::slice(1:9) |>  
-  knitr::kable(col.names = c("Capítulo", "Participantes"))
-
+  dplyr::filter(ativo) |>
+  tabela_br()
 ```
 
 ::: footer
-Atualizado em: `r  format(Sys.time(), '%m/%Y')`. Fonte: [R Community Explorer](https://benubah.github.io/r-community-explorer/rladies.html)
+Atualizado em: `r format(data_atualizacao, '%d/%m/%Y')`. Ativo: evento no Meetup nos últimos 12 meses, incluindo agendados e cancelados. Fonte: [RLadies+ Meetup Archive](https://github.com/rladies/meetup_archive)
 :::
 
-## R-Ladies no Brasil
+## R-Ladies no Brasil: outros capítulos {.smaller}
 
+:::: {.columns}
+::: {.column width="50%"}
 ```{r}
-rladies_br |>
-  dplyr::slice(10:dplyr::n()) |>
-  knitr::kable(col.names = c("Capítulo", "Participantes"))
+inativos_br <- rladies_br |>
+  dplyr::filter(!ativo)
 
+metade <- ceiling(nrow(inativos_br) / 2)
+
+inativos_br |>
+  dplyr::slice(1:metade) |>
+  tabela_br()
 ```
+:::
+
+::: {.column width="50%"}
+```{r}
+inativos_br |>
+  dplyr::slice((metade + 1):dplyr::n()) |>
+  tabela_br()
+```
+:::
+::::
 
 ```{r include=FALSE}
-pessoas_participantes <- rladies |> 
-  dplyr::filter(city == "São Paulo") |>
-  dplyr::select(members) |>
-  dplyr::pull()
+rladies_sp <- rladies |>
+  dplyr::filter(urlname == "rladies-sao-paulo")
 
-primeiro_meetup <-  rladies |>
-  dplyr::filter(city == "São Paulo") |> 
-  dplyr::pull(created) 
+pessoas_participantes <- rladies_sp$members
+
+primeiro_meetup <- rladies_sp$primeiro_evento
 ```
 
 ::: footer
-Atualizado em: `r  format(Sys.time(), '%m/%Y')`. Fonte: [R Community Explorer](https://benubah.github.io/r-community-explorer/rladies.html)
+Atualizado em: `r format(data_atualizacao, '%d/%m/%Y')`. Ativo: evento no Meetup nos últimos 12 meses, incluindo agendados e cancelados. Fonte: [RLadies+ Meetup Archive](https://github.com/rladies/meetup_archive)
 :::
 
 ## R-Ladies em São Paulo
@@ -181,7 +237,7 @@ knitr::include_graphics("https://beatrizmilz.github.io/slidesR/rladies/img/1meet
 
 -   **Primeiro encontro da R-Ladies São Paulo** - `r format(primeiro_meetup, format='%Y')`
 
--   **+ `r pessoas_participantes` pessoas participantes** - `r format(Sys.Date(), format='%m/%Y')`
+-   **+ `r pessoas_participantes` pessoas participantes** - `r format(data_atualizacao, format='%m/%Y')`
 
 ## GuGuDaDados
 
