@@ -552,13 +552,35 @@
 <ul>
 <li><p>Muitos recursos para aprender R estão disponíveis apenas em inglês.</p></li>
 <li><p>Traduzir amplia o acesso a conteúdos técnicos e democratiza o conhecimento.</p></li>
-<li><p>Exemplo: o livro <em>R for Data Science</em> é gratuito online em inglês, mas a 1ª edição em português estava disponível apenas impressa (R$ 120 a R$ 150).</p></li>
+<li><p>Mesmo com ferramentas de IA, traduções feitas e revisadas pela comunidade continuam importantes.</p></li>
 </ul>
 </div><div class="column" style="width:40%;">
 <p><img data-src="images/ilustracao-brasil.png"></p>
 </div></div>
+<aside class="notes">
+<p>IA ainda erra termos técnicos, não mantém um vocabulário consistente e precisa de revisão de pessoas que conhecem a área.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <div class="footer">
 <p>Ilustração: Ariana Cabral</p>
+</div>
+</section></section>
+<section>
+<section id="pacote-dados" class="title-slide slide level1 center" data-background-color="#562457">
+<h1>Pacote dados</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/logo-dados.png" class="quarto-figure quarto-figure-center" height="400"></p>
+</figure>
 </div>
 </section>
 <section id="pacote-dados-2020" class="slide level2">
@@ -566,7 +588,7 @@
 <ul>
 <li><p>Tradução das bases de dados usadas no livro <em>R for Data Science</em>.</p></li>
 <li><p>Inspirado no pacote <code>{datos}</code>, em espanhol.</p></li>
-<li><p>Coordenação: Riva Quiroga e Beatriz Milz (R-Ladies SP).</p></li>
+<li><p>Coordenação: <a href="https://rivaquiroga.cl/">Riva Quiroga</a> e Beatriz Milz (R-Ladies SP).</p></li>
 <li><p>11 pessoas voluntárias de 3 países (Brasil, Chile e Colômbia).</p></li>
 <li><p>Disponível no <a href="https://cran.r-project.org/web/packages/dados/index.html">CRAN</a>.</p></li>
 </ul>
@@ -576,29 +598,55 @@
 </figure>
 </div>
 </section>
-<section id="livro-r-para-ciência-de-dados" class="slide level2">
+<section id="pacote-dados-exemplo" class="slide level2">
+<h2>Pacote dados: exemplo</h2>
+<!-- Saída gerada com a versão 46d1fed do pacote no GitHub (o exemplo não é executado ao renderizar) -->
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="co"># install.packages("remotes")</span></span>
+<span id="cb1-2"><a href=""></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"cienciadedatos/dados"</span>) <span class="co"># instalar o pacote</span></span>
+<span id="cb1-3"><a href=""></a><span class="fu">library</span>(dados) <span class="co"># carregar o pacote</span></span>
+<span id="cb1-4"><a href=""></a>dados_starwars <span class="co"># exemplo: base starwars</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code># A tibble: 87 × 14
+  nome           altura massa cor_do_cabelo cor_da_pele  cor_dos_olhos
+  &lt;chr&gt;           &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;         &lt;chr&gt;        &lt;chr&gt;        
+1 Luke Skywalker    172    77 Loiro         Branca clara Azul         
+2 C-3PO             167    75 &lt;NA&gt;          Ouro         Amarelo      
+3 R2-D2              96    32 &lt;NA&gt;          Branca, Azul Vermelho     
+4 Darth Vader       202   136 Nenhum        Branca       Amarelo      
+5 Leia Organa       150    49 Castanho      Clara        Castanho     
+# ℹ 82 more rows
+# ℹ 8 more variables: ano_nascimento &lt;dbl&gt;, sexo_biologico &lt;chr&gt;,
+#   genero &lt;chr&gt;, planeta_natal &lt;chr&gt;, especie &lt;chr&gt;, filmes &lt;list&gt;,
+#   veiculos &lt;list&gt;, naves_espaciais &lt;list&gt;</code></pre>
+</section></section>
+<section>
+<section id="livro-r-para-ciência-de-dados" class="title-slide slide level1 center" data-background-color="#562457">
+<h1>Livro R para Ciência de Dados</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/capa-r4ds.jpg" class="quarto-figure quarto-figure-center" height="400"></p>
+</figure>
+</div>
+</section>
+<section id="livro-r-para-ciência-de-dados-1" class="slide level2">
 <h2>Livro R para Ciência de Dados</h2>
 <div class="columns">
 <div class="column" style="width:70%;">
 <ul>
+<li><p>A 1ª edição em português estava disponível apenas impressa (R$ 120 a R$ 150).</p></li>
 <li><p>2021: no <strong>Clube do livro da R-Ladies SP</strong>, vimos que a 2ª edição estava sendo escrita e <a href="https://github.com/hadley/r4ds/issues/955">pedimos permissão</a> para traduzir.</p></li>
 <li><p>Set/2023 a nov/2024: tradução da 2ª edição.</p>
 <ul>
 <li>Coordenação: Beatriz Milz. Orientação: Riva Quiroga.</li>
-<li>22 pessoas participaram: cada capítulo foi traduzido por uma pessoa e revisado por duas.</li>
 </ul></li>
-<li><p>Disponível gratuitamente em: <a href="https://pt.r4ds.hadley.nz/" class="uri">https://pt.r4ds.hadley.nz/</a></p></li>
+<li><p>Disponível gratuitamente em: <a href="https://pt.r4ds.hadley.nz/">pt.r4ds.hadley.nz</a></p></li>
 </ul>
 </div><div class="column" style="width:30%;">
-<p><img data-src="images/ilustracao-r4ds.png"></p>
+<p><img data-src="images/capa-r4ds.jpg"></p>
 </div></div>
-<div class="footer">
-<p>Ilustração: Ariana Cabral</p>
-</div>
 </section>
 <section id="livro-r-para-ciência-de-dados-equipe" class="slide level2">
 <h2>Livro R para Ciência de Dados: equipe</h2>
-<p>22 pessoas participaram da tradução e revisão!</p>
+<p>22 pessoas participaram: cada capítulo foi traduzido por uma pessoa e revisado por duas.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/equipe-r4ds-1.png" class="quarto-figure quarto-figure-center" style="width:55.0%"></p>
@@ -623,22 +671,35 @@
 </div><div class="column" style="width:40%;">
 <p><img data-src="images/clube-do-livro.png"></p>
 </div></div>
+</section></section>
+<section>
+<section id="devguide-da-ropensci" class="title-slide slide level1 center" data-background-color="#562457">
+<h1>DevGuide da rOpenSci</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/devguide-ropensci.png" class="quarto-figure quarto-figure-center" height="400"></p>
+</figure>
+</div>
 </section>
-<section id="devguide-da-ropensci" class="slide level2">
+<section id="devguide-da-ropensci-1" class="slide level2">
 <h2>DevGuide da rOpenSci</h2>
-<div class="columns">
-<div class="column" style="width:65%;">
 <ul>
 <li><p>Guia sobre desenvolvimento, manutenção e avaliação por pares de pacotes em R.</p></li>
 <li><p>Coordenação: Yanina Bellini Saibene e Pedro Faria.</p></li>
 <li><p>2024: <a href="https://ropensci.org/commcalls/translation-portuguese/">Community Call</a> “A comunidade R fala português” e Traslatón na LatinR.</p></li>
 <li><p>Disponível em: <a href="https://devguide.ropensci.org/pt/index.pt.html">devguide.ropensci.org/pt</a></p></li>
 </ul>
-</div><div class="column" style="width:35%;">
-<p><img data-src="images/devguide-ropensci.png"></p>
-</div></div>
+</section></section>
+<section>
+<section id="tradução-das-mensagens-do-r" class="title-slide slide level1 center" data-background-color="#562457">
+<h1>Tradução das mensagens do R</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/logo-r.png" class="quarto-figure quarto-figure-center" height="350"></p>
+</figure>
+</div>
 </section>
-<section id="tradução-das-mensagens-do-r" class="slide level2">
+<section id="tradução-das-mensagens-do-r-1" class="slide level2">
 <h2>Tradução das mensagens do R</h2>
 <div class="columns">
 <div class="column" style="width:55%;">
@@ -658,11 +719,11 @@
 <section id="mensagens-do-r-em-inglês" class="slide level2">
 <h2>Mensagens do R: em inglês</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="fu">mean</span>(notas)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="fu">mean</span>(notas)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error: object 'notas' not found</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="fu">library</span>(tidyvese)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a><span class="fu">library</span>(tidyvese)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in library(tidyvese): there is no package called 'tidyvese'</code></pre>
 </div>
@@ -672,15 +733,15 @@
 <h2>Mensagens do R: em português</h2>
 <p>Mudando o idioma das mensagens:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a><span class="fu">Sys.setenv</span>(<span class="at">LANGUAGE =</span> <span class="st">"pt_BR"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href=""></a><span class="fu">Sys.setenv</span>(<span class="at">LANGUAGE =</span> <span class="st">"pt_BR"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>O mesmo código, agora com as mensagens traduzidas:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href=""></a><span class="fu">mean</span>(notas)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href=""></a><span class="fu">mean</span>(notas)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error: objeto 'notas' não encontrado</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href=""></a><span class="fu">library</span>(tidyvese)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href=""></a><span class="fu">library</span>(tidyvese)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in library(tidyvese): não há nenhum pacote chamado 'tidyvese'</code></pre>
 </div>

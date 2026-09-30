@@ -276,7 +276,7 @@ Primeira edição em novembro/2022.
 
 -   Traduzir amplia o acesso a conteúdos técnicos e democratiza o conhecimento.
 
--   Exemplo: o livro *R for Data Science* é gratuito online em inglês, mas a 1ª edição em português estava disponível apenas impressa (R\$ 120 a R\$ 150).
+-   Mesmo com ferramentas de IA, traduções feitas e revisadas pela comunidade continuam importantes.
 :::
 
 ::: {.column width="40%"}
@@ -284,9 +284,17 @@ Primeira edição em novembro/2022.
 :::
 ::::
 
+::: notes
+IA ainda erra termos técnicos, não mantém um vocabulário consistente e precisa de revisão de pessoas que conhecem a área.
+:::
+
 ::: footer
 Ilustração: Ariana Cabral
 :::
+
+# Pacote dados {background-color="#562457"}
+
+![](images/logo-dados.png){fig-align="center" height="400"}
 
 ## Pacote dados (2020)
 
@@ -294,7 +302,7 @@ Ilustração: Ariana Cabral
 
 -   Inspirado no pacote `{datos}`, em espanhol.
 
--   Coordenação: Riva Quiroga e Beatriz Milz (R-Ladies SP).
+-   Coordenação: [Riva Quiroga](https://rivaquiroga.cl/) e Beatriz Milz (R-Ladies SP).
 
 -   11 pessoas voluntárias de 3 países (Brasil, Chile e Colômbia).
 
@@ -302,32 +310,59 @@ Ilustração: Ariana Cabral
 
 ![](images/equipe-dados.png){.nostretch fig-align="center" width="50%"}
 
+## Pacote dados: exemplo
+
+<!-- Saída gerada com a versão 46d1fed do pacote no GitHub (o exemplo não é executado ao renderizar) -->
+
+```r
+# install.packages("remotes")
+remotes::install_github("cienciadedatos/dados") # instalar o pacote
+library(dados) # carregar o pacote
+dados_starwars # exemplo: base starwars
+```
+
+```
+# A tibble: 87 × 14
+  nome           altura massa cor_do_cabelo cor_da_pele  cor_dos_olhos
+  <chr>           <int> <dbl> <chr>         <chr>        <chr>        
+1 Luke Skywalker    172    77 Loiro         Branca clara Azul         
+2 C-3PO             167    75 <NA>          Ouro         Amarelo      
+3 R2-D2              96    32 <NA>          Branca, Azul Vermelho     
+4 Darth Vader       202   136 Nenhum        Branca       Amarelo      
+5 Leia Organa       150    49 Castanho      Clara        Castanho     
+# ℹ 82 more rows
+# ℹ 8 more variables: ano_nascimento <dbl>, sexo_biologico <chr>,
+#   genero <chr>, planeta_natal <chr>, especie <chr>, filmes <list>,
+#   veiculos <list>, naves_espaciais <list>
+```
+
+# Livro R para Ciência de Dados {background-color="#562457"}
+
+![](images/capa-r4ds.jpg){fig-align="center" height="400"}
+
 ## Livro R para Ciência de Dados
 
 :::: {.columns}
 ::: {.column width="70%"}
+-   A 1ª edição em português estava disponível apenas impressa (R\$ 120 a R\$ 150).
+
 -   2021: no **Clube do livro da R-Ladies SP**, vimos que a 2ª edição estava sendo escrita e [pedimos permissão](https://github.com/hadley/r4ds/issues/955) para traduzir.
 
 -   Set/2023 a nov/2024: tradução da 2ª edição.
 
     -   Coordenação: Beatriz Milz. Orientação: Riva Quiroga.
-    -   22 pessoas participaram: cada capítulo foi traduzido por uma pessoa e revisado por duas.
 
--   Disponível gratuitamente em: <https://pt.r4ds.hadley.nz/>
+-   Disponível gratuitamente em: [pt.r4ds.hadley.nz](https://pt.r4ds.hadley.nz/)
 :::
 
 ::: {.column width="30%"}
-![](images/ilustracao-r4ds.png)
+![](images/capa-r4ds.jpg)
 :::
 ::::
 
-::: footer
-Ilustração: Ariana Cabral
-:::
-
 ## Livro R para Ciência de Dados: equipe
 
-22 pessoas participaram da tradução e revisão!
+22 pessoas participaram: cada capítulo foi traduzido por uma pessoa e revisado por duas.
 
 ![](images/equipe-r4ds-1.png){fig-align="center" width="55%"}
 
@@ -351,10 +386,12 @@ Ilustração: Ariana Cabral
 :::
 ::::
 
+# DevGuide da rOpenSci {background-color="#562457"}
+
+![](images/devguide-ropensci.png){fig-align="center" height="400"}
+
 ## DevGuide da rOpenSci
 
-:::: {.columns}
-::: {.column width="65%"}
 -   Guia sobre desenvolvimento, manutenção e avaliação por pares de pacotes em R.
 
 -   Coordenação: Yanina Bellini Saibene e Pedro Faria.
@@ -362,12 +399,10 @@ Ilustração: Ariana Cabral
 -   2024: [Community Call](https://ropensci.org/commcalls/translation-portuguese/) "A comunidade R fala português" e Traslatón na LatinR.
 
 -   Disponível em: [devguide.ropensci.org/pt](https://devguide.ropensci.org/pt/index.pt.html)
-:::
 
-::: {.column width="35%"}
-![](images/devguide-ropensci.png)
-:::
-::::
+# Tradução das mensagens do R {background-color="#562457"}
+
+![](images/logo-r.png){fig-align="center" height="350"}
 
 ## Tradução das mensagens do R
 
