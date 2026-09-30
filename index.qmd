@@ -533,6 +533,21 @@ Fonte do gráfico: [Blog do R](https://blog.r-project.org/2022/07/25/r-can-use-y
 
 -   A organização das traduções fica na organização [r-devel](https://github.com/r-devel) do GitHub: guias, glossário e painel de acompanhamento das traduções.
 
+## Próxima geração de contribuições ao R
+
+-   Em 2025, o projeto *Enabling the Next Generation of Contributors to R* recebeu cerca de £500 mil do Research Software Maintenance Fund (Software Sustainability Institute, Reino Unido).
+
+-   Objetivo: garantir a sustentabilidade do R Project.
+
+-   A R6 Estatística e Treinamentos (Curso-R), consultoria brasileira, está trabalhando para melhorar a integração das traduções feitas no Weblate.
+
+    -   Equipe da R6: Beatriz Milz e Fernando Corrêa.
+    -   Mentoria das pessoas que administram o Weblate: Mike Chirico e Gergely Daróczi.
+
+::: footer
+Fonte: [RSMF: Enabling the Next Generation of Contributors to R - Blog do R](https://blog.r-project.org/2025/12/17/rsmf-enabling-the-next-generation-of-contributors-to-r/)
+:::
+
 ## Mensagens do R: em inglês
 
 ```{r}
