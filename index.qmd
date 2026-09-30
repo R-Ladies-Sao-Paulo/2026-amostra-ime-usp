@@ -292,6 +292,15 @@ IA ainda erra termos técnicos, não mantém um vocabulário consistente e preci
 Ilustração: Ariana Cabral
 :::
 
+## Vamos falar de 4 projetos
+
+| Projeto                      | Comunidades envolvidas                                   |
+|------------------------------|----------------------------------------------------------|
+| Pacote dados                 | LatinR, R-Ladies                                         |
+| Livro R para Ciência de Dados | R-Ladies São Paulo, LatinR, Curso-R                     |
+| DevGuide da rOpenSci         | rOpenSci, LatinR                                         |
+| Tradução das mensagens do R  | R Contribution Working Group (inclui a R-Ladies), LatinR |
+
 # Pacote dados {background-color="#562457"}
 
 ![](images/logo-dados.png){fig-align="center" height="400"}
@@ -339,6 +348,34 @@ dados_starwars # exemplo: base starwars
 # Livro R para Ciência de Dados {background-color="#562457"}
 
 ![](images/capa-r4ds.jpg){fig-align="center" height="400"}
+
+## O livro R for Data Science
+
+-   Livro para aprender ciência de dados com R e o tidyverse: importar, arrumar, transformar, visualizar e modelar dados.
+
+-   Autoria: Hadley Wickham, Mine Çetinkaya-Rundel e Garrett Grolemund.
+
+-   Gratuito online ([r4ds.hadley.nz](https://r4ds.hadley.nz/)) e à venda impresso (O'Reilly).
+
+## Quem escreveu o livro?
+
+:::: {.columns}
+::: {.column width="70%"}
+-   **Hadley Wickham**: cientista-chefe da Posit (antiga RStudio), lidera a equipe do tidyverse e criou pacotes como ggplot2 e dplyr.
+
+-   **Mine Çetinkaya-Rundel**: professora do Departamento de Ciência Estatística da Duke University, trabalha com ensino de estatística e ciência de dados.
+
+-   **Garrett Grolemund**: autor do livro *Hands-On Programming with R* e um dos autores do pacote lubridate.
+:::
+
+::: {.column width="30%"}
+![Hadley Wickham](images/hadley.jpg)
+:::
+::::
+
+::: footer
+Fontes: [hadley.nz](https://hadley.nz/), [mine-cr.com](https://mine-cr.com/), [Hands-On Programming with R](https://rstudio-education.github.io/hopr/)
+:::
 
 ## Livro R para Ciência de Dados
 
@@ -390,6 +427,40 @@ dados_starwars # exemplo: base starwars
 
 ![](images/devguide-ropensci.png){fig-align="center" height="400"}
 
+## O que é a rOpenSci?
+
+![](images/logo-ropensci.png){.nostretch width="30%"}
+
+-   Organização sem fins lucrativos, fundada em 2011.
+
+-   Promove pesquisa aberta e reprodutível, com dados compartilhados e software reutilizável.
+
+-   Faz revisão por pares de pacotes R, com uma equipe de editoras e editores voluntários.
+
+-   Busca construir uma comunidade acolhedora e diversa.
+
+::: footer
+Fonte: [About - rOpenSci](https://ropensci.org/about/)
+:::
+
+## Pacotes da rOpenSci
+
+[![](images/ropensci-pacotes.png){fig-align="center"}](https://ropensci.org/packages/)
+
+## Exemplo: pdftools
+
+[![](images/pdftools.png){fig-align="center"}](https://docs.ropensci.org/pdftools/)
+
+## Outros pacotes da rOpenSci
+
+-   [targets](https://docs.ropensci.org/targets/): pipelines reprodutíveis, que reexecutam apenas o que mudou.
+
+-   [skimr](https://docs.ropensci.org/skimr/): resumo rápido e legível de bases de dados.
+
+-   [magick](https://docs.ropensci.org/magick/): processamento de imagens no R.
+
+-   Veja todos em: [ropensci.org/packages](https://ropensci.org/packages/all/)
+
 ## DevGuide da rOpenSci
 
 -   Guia sobre desenvolvimento, manutenção e avaliação por pares de pacotes em R.
@@ -425,6 +496,16 @@ dados_starwars # exemplo: base starwars
 ::: footer
 Fonte do gráfico: [Blog do R](https://blog.r-project.org/2022/07/25/r-can-use-your-help-translating-r-messages/)
 :::
+
+## Quem está por trás?
+
+-   [R Contribution Working Group](https://contributor.r-project.org/working-group.html): colaboração entre o R Core, comunidades como **R-Ladies**, Forwards e MiR, e a comunidade R em geral.
+
+    -   Objetivo: incentivar novas pessoas a contribuir com o R, com foco em diversidade e inclusão.
+
+-   Equipes voluntárias de tradução para cada idioma.
+
+-   A organização das traduções fica na organização [r-devel](https://github.com/r-devel) do GitHub: guias, glossário e painel de acompanhamento das traduções.
 
 ## Mensagens do R: em inglês
 
@@ -462,7 +543,7 @@ library(tidyvese)
 
 ## Como contribuir?
 
-1.  Entre no [Slack do R Contributors](https://contributor.r-project.org/slack) e se apresente no canal `#core-translations`.
+1.  Entre no [Zulip do R Project](https://contributor.r-project.org/zulip.html) e procure os canais da seção *Translation*.
 
 2.  Crie uma conta no [Weblate](https://translate.rx.studio/), a plataforma onde as traduções são feitas.
 
@@ -490,12 +571,14 @@ Mais informações: [R Contributors - Translations](https://contributor.r-projec
 
 -   O Clube do livro da R-Ladies SP ajuda a divulgar o livro traduzido.
 
+-   A R-Ladies faz parte do R Contribution Working Group, que incentiva novas pessoas a contribuir com o R (inclusive com traduções).
+
 ::: r-hstack
-![](images/logo.jpg){height="150"}
+![](images/logo.jpg){height="110"}
 
-![](images/logo-latinr.png){height="150"}
+![](images/logo-latinr.png){height="110"}
 
-![](images/logo-curso-r.png){height="80"}
+![](images/logo-curso-r.png){height="60"}
 :::
 
 <!-- inicio font awesome -->
