@@ -3,6 +3,7 @@ title: "Projetos de tradução com a comunidade R"
 subtitle: "aMostra de Estatística - IME USP"
 author: "[R-Ladies São Paulo](https://www.meetup.com/rladies-sao-paulo/) + Beatriz Milz + Geovana Lopes Batista"
 date: "2026-10-01"
+date-format: "DD [de] MMMM [de] YYYY"
 lang: pt-BR
 format: 
   rladies-revealjs:
@@ -27,11 +28,11 @@ incremental: false
 ::: {.column width="70%"}
 -   Doutorado em Ciência Ambiental (IEE/USP), estágio pós-doutoral na UFABC (bolsista FAPESP).
 
--   Co-organizadora da R-Ladies São Paulo desde 2018.
+-   Co-organizadora da [R-Ladies São Paulo](https://rladies-sp.org/) desde 2018.
 
--   Editora de revisão de software na rOpenSci desde 2024.
+-   Editora de revisão de software na [rOpenSci](https://ropensci.org/author/beatriz-milz/) desde 2024.
 
--   Instrutora certificada de tidyverse pela RStudio/Posit e GitHub Star.
+- [GitHub Star](https://stars.github.com/profiles/beatrizmilz).
 
 -   Mãe do Eduardo.
 
@@ -41,15 +42,21 @@ incremental: false
 
 ## Geovana Lopes Batista
 
-<!-- TODO Geo: adicionar foto em images/ e preencher os tópicos -->
-
 :::: {.columns}
 ::: {.column width="30%"}
-<!-- ![](images/geo.jpg) -->
+![](images/geo.jpg)
 :::
 
 ::: {.column width="70%"}
--   ...
+-   Cientista de dados no Banco BMG.
+
+-   Formada em Matemática pela USP e graduanda em Estatística no IME-USP.
+
+-   Pós-graduação em Ciência de Dados pelo IFSP.
+
+-   Co-organizadora da [R-Ladies São Paulo](https://rladies-sp.org/).
+
+-   [GitHub](https://github.com/GeovanaLopes) \| [LinkedIn](https://br.linkedin.com/in/geovanalopes)
 :::
 ::::
 
