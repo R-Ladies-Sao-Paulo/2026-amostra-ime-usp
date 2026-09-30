@@ -319,6 +319,10 @@ Ilustração: Ariana Cabral
 
 ![](images/equipe-dados.png){.nostretch fig-align="center" width="50%"}
 
+## Site do pacote dados
+
+[![](images/site-dados.png){fig-align="center"}](https://cienciadedatos.github.io/dados/)
+
 ## Pacote dados: exemplo
 
 <!-- Saída gerada com a versão 46d1fed do pacote no GitHub (o exemplo não é executado ao renderizar) -->
@@ -397,6 +401,10 @@ Fontes: [hadley.nz](https://hadley.nz/), [mine-cr.com](https://mine-cr.com/), [H
 :::
 ::::
 
+## Site do livro em português
+
+[![](images/site-r4ds.png){fig-align="center"}](https://pt.r4ds.hadley.nz/)
+
 ## Livro R para Ciência de Dados: equipe
 
 22 pessoas participaram: cada capítulo foi traduzido por uma pessoa e revisado por duas.
@@ -461,15 +469,33 @@ Fonte: [About - rOpenSci](https://ropensci.org/about/)
 
 -   Veja todos em: [ropensci.org/packages](https://ropensci.org/packages/all/)
 
-## DevGuide da rOpenSci
+## DevGuide da rOpenSci {.smaller}
 
+:::: {.columns}
+::: {.column width="70%"}
 -   Guia sobre desenvolvimento, manutenção e avaliação por pares de pacotes em R.
 
--   Coordenação: Yanina Bellini Saibene e Pedro Faria.
+-   Tradução de jun/2023 a out/2025, com pessoas de Angola, Brasil e Portugal.
+
+-   Coordenação: Yanina Bellini Saibene.
+
+-   Participação: Francesca Belem Lopes Palmeira, Beatriz Milz, António Pedro, Ariana Moura Cabral, Daniel Vartanian, Ildeberto Vasconcelos, João Granja-Correia, Marcelo Perlin, Pedro Faria, Rafael Fontenelle e Samuel Carleial Fernandes.
 
 -   2024: [Community Call](https://ropensci.org/commcalls/translation-portuguese/) "A comunidade R fala português" e Traslatón na LatinR.
+:::
 
--   Disponível em: [devguide.ropensci.org/pt](https://devguide.ropensci.org/pt/index.pt.html)
+::: {.column width="30%"}
+![](images/devguide-ropensci.png)
+:::
+::::
+
+::: footer
+Fonte: [Blog da rOpenSci](https://ropensci.org/pt/blog/2025/11/25/tradu%C3%A7%C3%A3o-devguide-pt/)
+:::
+
+## Site do DevGuide em português
+
+[![](images/site-devguide.png){fig-align="center"}](https://devguide.ropensci.org/pt/index.pt.html)
 
 # Tradução das mensagens do R {background-color="#562457"}
 
@@ -562,6 +588,12 @@ library(tidyvese)
 ::: footer
 Mais informações: [R Contributors - Translations](https://contributor.r-project.org/translations/)
 :::
+
+## Oportunidades que surgiram
+
+-   2023: Caio Lente e Renata Hirota participaram do [R Project Sprint 2023](https://contributor.r-project.org/r-project-sprint-2023/) (University of Warwick, Reino Unido), contribuindo com a tradução do R.
+
+-   2025: Beatriz Milz apresentou [a tradução do R4DS na posit::conf(2025)](https://beamilz.com/talks/en/2025-posit-conf/) (Atlanta, EUA), com bolsa da Posit.
 
 ## E a R-Ladies nisso tudo?
 
