@@ -14,9 +14,18 @@ incremental: false
 
 ## Cronograma
 
-- R-Ladies São Paulo
+-   Quem somos
 
-- Projetos de tradução com a comunidade R
+-   R-Ladies São Paulo
+
+-   Projetos de tradução com a comunidade R
+
+    -   Pacote dados
+    -   Livro R para Ciência de Dados
+    -   DevGuide da rOpenSci
+    -   Tradução das mensagens do R
+
+-   Faça parte!
 
 ## Beatriz Milz
 
@@ -232,7 +241,7 @@ Atualizado em: `r format(data_atualizacao, '%d/%m/%Y')`. Ativo: evento no Meetup
 ## R-Ladies em São Paulo
 
 ```{r out.width="65%", fig.align='center'}
-knitr::include_graphics("https://beatrizmilz.github.io/slidesR/rladies/img/1meetupsp.jpeg")
+knitr::include_graphics("images/primeiro-encontro-sp.jpeg")
 ```
 
 -   **Primeiro encontro da R-Ladies São Paulo** - `r format(primeiro_meetup, format='%Y')`
@@ -279,12 +288,12 @@ Ilustração: Ariana Cabral
 
 ## Vamos falar de 4 projetos
 
-| Projeto                      | Comunidades envolvidas                                   |
-|------------------------------|----------------------------------------------------------|
-| Pacote dados                 | LatinR, RLadies+                                         |
-| Livro R para Ciência de Dados | R-Ladies São Paulo, LatinR, Curso-R                     |
-| DevGuide da rOpenSci         | rOpenSci, LatinR                                         |
-| Tradução das mensagens do R  | R Contribution Working Group (inclui a RLadies+), LatinR |
+1.  Pacote dados
+2.  Livro R para Ciência de Dados
+3.  DevGuide da rOpenSci
+4.  Tradução das mensagens do R
+
+Comunidades envolvidas: [RLadies+](https://rladies.org/), [R-Ladies São Paulo](https://rladies-sp.org/), [LatinR](https://latinr.org/), [Curso-R](https://curso-r.com/), [rOpenSci](https://ropensci.org/) e [R Contribution Working Group](https://contributor.r-project.org/working-group.html).
 
 # Pacote dados {background-color="#562457"}
 
