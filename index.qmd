@@ -17,6 +17,42 @@ incremental: false
 
 - Projetos de tradução com a comunidade R
 
+## Beatriz Milz
+
+:::: {.columns}
+::: {.column width="30%"}
+![](images/bea.jpg)
+:::
+
+::: {.column width="70%"}
+-   Doutorado em Ciência Ambiental (IEE/USP), estágio pós-doutoral na UFABC (bolsista FAPESP).
+
+-   Co-organizadora da R-Ladies São Paulo desde 2018.
+
+-   Editora de revisão de software na rOpenSci desde 2024.
+
+-   Instrutora certificada de tidyverse pela RStudio/Posit e GitHub Star.
+
+-   Mãe do Eduardo.
+
+-   Site: [beamilz.com](https://beamilz.com)
+:::
+::::
+
+## Geovana Lopes Batista
+
+<!-- TODO Geo: adicionar foto em images/ e preencher os tópicos -->
+
+:::: {.columns}
+::: {.column width="30%"}
+<!-- ![](images/geo.jpg) -->
+:::
+
+::: {.column width="70%"}
+-   ...
+:::
+::::
+
 # R-Ladies SP {background-color="#562457"}
 
 ```{r include=FALSE}
