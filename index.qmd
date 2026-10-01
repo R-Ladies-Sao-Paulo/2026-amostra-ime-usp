@@ -1,6 +1,6 @@
 ---
 title: "Projetos de tradução com a comunidade R"
-subtitle: "aMostra de Estatística - IME USP"
+subtitle: "aMostra de Estatística - IME USP<br>[r-ladies-sao-paulo.github.io/2026-amostra-ime-usp](https://r-ladies-sao-paulo.github.io/2026-amostra-ime-usp/)"
 author: "[R-Ladies São Paulo](https://www.meetup.com/rladies-sao-paulo/) + Beatriz Milz + Geovana Lopes Batista"
 date: "2026-10-01"
 date-format: "DD [de] MMMM [de] YYYY"
@@ -301,17 +301,26 @@ Comunidades envolvidas: [RLadies+](https://rladies.org/), [R-Ladies São Paulo](
 
 ## Pacote dados (2020)
 
--   Tradução das bases de dados usadas no livro *R for Data Science*.
+-   Tradução das bases de dados usadas no livro *R for Data Science*: documentação, nomes das colunas e valores das colunas categóricas e de texto.
 
 -   Inspirado no pacote `{datos}`, em espanhol.
 
--   Coordenação: [Riva Quiroga](https://rivaquiroga.cl/) e Beatriz Milz (R-Ladies SP).
+-   Coordenação: [Riva Quiroga](https://rivaquiroga.cl/) e Beatriz Milz.
 
--   11 pessoas voluntárias de 3 países (Brasil, Chile e Colômbia).
+
 
 -   Disponível no [CRAN](https://cran.r-project.org/web/packages/dados/index.html).
 
-![](images/equipe-dados.png){.nostretch fig-align="center" width="50%"}
+-   GitHub: issues, pull requests e projects para organizar o trabalho.
+
+
+
+## Equipe
+
+-   11 pessoas voluntárias de 3 países (Brasil, Chile e Colômbia).
+
+![](images/equipe-dados.png){.nostretch fig-align="center" width="100%"}
+
 
 ## Site do pacote dados
 
@@ -395,9 +404,7 @@ Fontes: [hadley.nz](https://hadley.nz/), [mine-cr.com](https://mine-cr.com/), [H
 :::
 ::::
 
-## Site do livro em português
 
-[![](images/site-r4ds.png){fig-align="center"}](https://pt.r4ds.hadley.nz/)
 
 ## Livro R para Ciência de Dados: equipe
 
@@ -411,7 +418,7 @@ Fontes: [hadley.nz](https://hadley.nz/), [mine-cr.com](https://mine-cr.com/), [H
 
 :::: {.columns}
 ::: {.column width="60%"}
--   Comunidades como a RLadies+ ajudaram a encontrar pessoas voluntárias.
+-   Comunidades como a R-Ladies ajudaram a encontrar pessoas voluntárias.
 
 -   GitHub: issues, pull requests e projects para organizar o trabalho.
 
@@ -424,6 +431,24 @@ Fontes: [hadley.nz](https://hadley.nz/), [mine-cr.com](https://mine-cr.com/), [H
 ![](images/clube-do-livro.png)
 :::
 ::::
+
+## Aprendendo Git e GitHub
+
+-   Muitas pessoas voluntárias não sabiam usar Git e GitHub.
+
+-   Apoio: o guia de tradução e chamadas de ajuda.
+
+-   Várias pessoas contaram que aprender Git e GitHub foi um dos ganhos de participar do projeto.
+
+-   Git e GitHub são muito usados no mercado de trabalho: para versionar código, colaborar em equipe e mostrar portfólio.
+
+## Guia de tradução: Git e GitHub
+
+[![](images/guia-git-github.png){fig-align="center"}](https://cienciadedatos.github.io/guia-traducao-ptbr/git-github.html)
+
+## Site do livro em português
+
+[![](images/site-r4ds.png){fig-align="center"}](https://pt.r4ds.hadley.nz/)
 
 # DevGuide da rOpenSci {background-color="#562457"}
 
@@ -463,7 +488,7 @@ Fonte: [About - rOpenSci](https://ropensci.org/about/)
 
 -   Veja todos em: [ropensci.org/packages](https://ropensci.org/packages/all/)
 
-## DevGuide da rOpenSci {.smaller}
+## DevGuide da rOpenSci
 
 :::: {.columns}
 ::: {.column width="70%"}
@@ -473,9 +498,11 @@ Fonte: [About - rOpenSci](https://ropensci.org/about/)
 
 -   Coordenação: Yanina Bellini Saibene.
 
+::: {.smaller}
 -   Participação: Francesca Belem Lopes Palmeira, Beatriz Milz, António Pedro, Ariana Moura Cabral, Daniel Vartanian, Ildeberto Vasconcelos, João Granja-Correia, Marcelo Perlin, Pedro Faria, Rafael Fontenelle e Samuel Carleial Fernandes.
+:::
 
--   2024: [Community Call](https://ropensci.org/commcalls/translation-portuguese/) "A comunidade R fala português" e Traslatón na LatinR.
+<!-- -   2024: [Community Call](https://ropensci.org/commcalls/translation-portuguese/) "A comunidade R fala português" e Traslatón na LatinR. -->
 :::
 
 ::: {.column width="30%"}
@@ -486,6 +513,12 @@ Fonte: [About - rOpenSci](https://ropensci.org/about/)
 ::: footer
 Fonte: [Blog da rOpenSci](https://ropensci.org/pt/blog/2025/11/25/tradu%C3%A7%C3%A3o-devguide-pt/)
 :::
+
+## DevGuide: como a tradução é feita
+
+-   Tradução inicial automática com o pacote [babeldown](https://docs.ropensci.org/babeldown/) (que usa o DeepL), e revisada por uma pessoa.
+
+-   Hoje, toda alteração no DevGuide precisa ser traduzida para português e espanhol antes de ser incorporada na versão original (em inglês).
 
 ## Site do DevGuide em português
 
@@ -501,7 +534,7 @@ Fonte: [Blog da rOpenSci](https://ropensci.org/pt/blog/2025/11/25/tradu%C3%A7%C3
 ::: {.column width="55%"}
 -   Tradução das mensagens (erros, avisos, etc.) do R e dos pacotes do "R base".
 
--   2022: R Traslatón na LatinR, em parceria com o R Contributors.
+<!-- -   2022: R Traslatón na LatinR, em parceria com o R Contributors. -->
 
 -   **Projeto aberto para contribuições!**
 :::
@@ -515,15 +548,15 @@ Fonte: [Blog da rOpenSci](https://ropensci.org/pt/blog/2025/11/25/tradu%C3%A7%C3
 Fonte do gráfico: [Blog do R](https://blog.r-project.org/2022/07/25/r-can-use-your-help-translating-r-messages/)
 :::
 
-## Quem está por trás?
+<!-- ## Quem está por trás? -->
 
--   [R Contribution Working Group](https://contributor.r-project.org/working-group.html): colaboração entre o R Core, comunidades como **RLadies+**, Forwards e MiR, e a comunidade R em geral.
+<!-- -   [R Contribution Working Group](https://contributor.r-project.org/working-group.html): colaboração entre o R Core, comunidades como **RLadies+**, Forwards e MiR, e a comunidade R em geral. -->
 
-    -   Objetivo: incentivar novas pessoas a contribuir com o R, com foco em diversidade e inclusão.
+<!--     -   Objetivo: incentivar novas pessoas a contribuir com o R, com foco em diversidade e inclusão. -->
 
--   Equipes voluntárias de tradução para cada idioma.
+<!-- -   Equipes voluntárias de tradução para cada idioma. -->
 
--   A organização das traduções fica na organização [r-devel](https://github.com/r-devel) do GitHub: guias, glossário e painel de acompanhamento das traduções.
+<!-- -   A organização das traduções fica na organização [r-devel](https://github.com/r-devel) do GitHub: guias, glossário e painel de acompanhamento das traduções. -->
 
 ## Mensagens do R: em inglês
 
@@ -581,16 +614,21 @@ library(tidyvese)
 Mais informações: [R Contributors - Translations](https://contributor.r-project.org/translations/)
 :::
 
+## Materiais de apoio em português
+
+-   [Live "Traduzindo o R"](https://www.youtube.com/watch?v=Mf9iwGEXRD8), com Caio Lente, no canal da Curso-R.
+
+-   [Guia de tradução: Weblate](https://cienciadedatos.github.io/guia-traducao-ptbr/weblate.html).
+
+-   [Community Call "A comunidade R fala português"](https://ropensci.org/commcalls/translation-portuguese/), da rOpenSci (2024), e os [slides da apresentação](https://beamilz.com/talks/pt/2024-11-05-ropensci-traducao-pt/).
+
 ## Próxima geração de contribuições ao R
 
 -   Em 2025, o projeto *Enabling the Next Generation of Contributors to R* recebeu cerca de £500 mil do Research Software Maintenance Fund (Software Sustainability Institute, Reino Unido).
 
 -   Objetivo: garantir a sustentabilidade do R Project.
 
--   A R6 Estatística e Treinamentos (Curso-R), consultoria brasileira, está trabalhando para melhorar a integração das traduções feitas no Weblate.
-
-    -   Equipe da R6: Beatriz Milz e Fernando Corrêa.
-    -   Mentoria das pessoas que administram o Weblate: Mike Chirico e Gergely Daróczi.
+-   Beatriz Milz e Fernando Correa estão trabalhando para melhorar a integração das traduções feitas no Weblate, com a mentoria do Gergely Daróczi (administrador do Weblate).
 
 ::: footer
 Fonte: [RSMF: Enabling the Next Generation of Contributors to R - Blog do R](https://blog.r-project.org/2025/12/17/rsmf-enabling-the-next-generation-of-contributors-to-r/)
@@ -616,7 +654,7 @@ Fonte: [RSMF: Enabling the Next Generation of Contributors to R - Blog do R](htt
 
 -   O Clube do livro da R-Ladies SP ajuda a divulgar o livro traduzido.
 
--   A RLadies+ faz parte do R Contribution Working Group, que incentiva novas pessoas a contribuir com o R (inclusive com traduções).
+<!-- -   A RLadies+ faz parte do R Contribution Working Group, que incentiva novas pessoas a contribuir com o R (inclusive com traduções). -->
 
 ::: r-hstack
 ![](images/logo.jpg){height="110"}
