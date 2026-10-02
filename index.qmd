@@ -46,6 +46,8 @@ incremental: false
 -   Mãe do Eduardo.
 
 -   Site: [beamilz.com](https://beamilz.com)
+
+- Email: milz.bea@gmail.com
 :::
 ::::
 
@@ -66,6 +68,8 @@ incremental: false
 -   Co-organizadora da [R-Ladies São Paulo](https://rladies-sp.org/).
 
 -   [GitHub](https://github.com/GeovanaLopes) \| [LinkedIn](https://br.linkedin.com/in/geovanalopes)
+
+- Email: geovana.batista@usp.br
 :::
 ::::
 
@@ -702,6 +706,10 @@ Fonte: [RSMF: Enabling the Next Generation of Contributors to R - Blog do R](htt
 # Obrigada! {background-color="#562457"}
 
 Slides: [r-ladies-sao-paulo.github.io/2026-amostra-ime-usp](https://r-ladies-sao-paulo.github.io/2026-amostra-ime-usp/)
+
+- Email: 
+  - Beatriz Milz - milz.bea@gmail.com
+  - Geovana Lopes Batista - geovana.batista@usp.br 
 
 <!-- inicio font awesome -->
 

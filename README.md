@@ -4,7 +4,14 @@ Slides da apresentação na **[aMostra de Estatística - IME USP](https://www.im
 
 Apresentação: [R-Ladies São Paulo](https://rladies-sp.org/), [Beatriz Milz](https://github.com/beatrizmilz) e [Geovana Lopes Batista](https://github.com/GeovanaLopes).
 
+Email: 
+  - Beatriz Milz - milz.bea@gmail.com
+  - Geovana Lopes Batista - geovana.batista@usp.br 
+
 **Slides:** <https://r-ladies-sao-paulo.github.io/2026-amostra-ime-usp/>
+
+**Gravação:** <https://www.youtube.com/live/kWMkBuf8F7s?si=Z5R47YG8z_sLEPOj>
+
 
 ## Conteúdo
 
